@@ -70,6 +70,7 @@ from email.mime.base import MIMEBase
 from email import encoders
 
 sender_email = "your_email@gmail.com"
+sender_name = "your_name"
 password = "your_16_digit_app_password"
 
 email_list = [
@@ -87,7 +88,7 @@ for receiver_email in email_list:
 
     msg = MIMEMultipart()
 
-    msg["From"] = sender_email
+    msg["From"] = sender_name
     msg["To"] = receiver_email
     msg["Subject"] = "Application for [add your role]"
 
