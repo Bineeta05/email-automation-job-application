@@ -8,7 +8,7 @@ from email import encoders
 
 # Sender Credentials
 sender_email = "your_email@gmail.com"
-
+sender_name = "your_name"
 # Use Gmail App Password here
 password = "your_16_digit_app_password"
 
@@ -35,7 +35,7 @@ for receiver_email in email_list:
     # Create Email
     msg = MIMEMultipart()
 
-    msg["From"] = sender_email
+    msg["From"] = sender_name
 
     msg["To"] = receiver_email
 
