@@ -1,4 +1,4 @@
-# Email_Notification
+# Email_Notification - Automated Resume Email Sender using Python
 
 This project automates sending job application emails with resume attachments to multiple recruiters using Python and SMTP.
 
@@ -32,7 +32,6 @@ email-automation-job-application/
 ├── requirements.txt
 ├── send_emails.py
 ├── sample_resume.pdf
-├── .gitignore
 └── screenshots/
 ```
 
@@ -40,15 +39,7 @@ email-automation-job-application/
 
 ## Setup Instructions
 
-### 1. Install Requirements
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-### 2. Enable Gmail App Password
+### 1. Enable Gmail App Password
 
 Google blocks normal password login for SMTP.
 
@@ -97,7 +88,7 @@ for receiver_email in email_list:
 
     msg["From"] = sender_email
     msg["To"] = receiver_email
-    msg["Subject"] = "Application for Azure Data Engineer Role"
+    msg["Subject"] = "Application for [add your role]"
 
     body = f"""
 Hi,
@@ -114,7 +105,7 @@ Skills:
 - Microsoft Purview
 
 Regards,
-Your Name
+[Your Name]
 """
 
     msg.attach(MIMEText(body, "plain"))
