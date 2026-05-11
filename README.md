@@ -58,6 +58,7 @@ https://myaccount.google.com/apppasswords
 ---
 
 ## Python Script
+### Run the below code in databricks
 
 ```python
 import smtplib
