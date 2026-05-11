@@ -1,5 +1,4 @@
 # Email_Notification
-# Automated Resume Email Sender using Python
 
 This project automates sending job application emails with resume attachments to multiple recruiters using Python and SMTP.
 
@@ -41,15 +40,7 @@ email-automation-job-application/
 
 ## Setup Instructions
 
-### 1. Clone Repository
-
-```bash
-git clone https://github.com/yourusername/email-automation-job-application.git
-```
-
----
-
-### 2. Install Requirements
+### 1. Install Requirements
 
 ```bash
 pip install -r requirements.txt
@@ -57,7 +48,7 @@ pip install -r requirements.txt
 
 ---
 
-### 3. Enable Gmail App Password
+### 2. Enable Gmail App Password
 
 Google blocks normal password login for SMTP.
 
